@@ -21,6 +21,11 @@ img {
   width: 100%;
 }
 
+.dino-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .dino:nth-child(even) {
   display: none;
 }
@@ -36,6 +41,7 @@ img {
     width: 50%;
     display: block;
   }
+
   .dino:nth-child(even) {
     display: block;
   }
@@ -50,7 +56,7 @@ img {
   }
 
   .dino {
-    width: 33.333%
+    width: 33.333%;
   }
 
   .dino:nth-child(1) {
@@ -89,4 +95,5 @@ img {
   .dino {
     width: 25%;
   }
+
 }

@@ -1,0 +1,92 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.dino:nth-child(even) {
+  display: none;
+}
+
+@media only screen and (min-width: 25em) {
+
+  .dino-wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .dino {
+    width: 50%
+    display: block;
+  }
+  .dino:nth-child(even) {
+    display: block;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  .dino-wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .dino {
+    width: 33.333%
+  }
+
+  .dino:nth-child(1) {
+    display: none;
+  }
+
+  .dino:nth-child(3) {
+    display: inline;
+  }
+
+  .dino:nth-child(2) {
+    display: inline;
+  }
+
+  .dino:nth-child(4) {
+    display: inline;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .dino-wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .dino:nth-child(even) {
+    display: inline-block;
+  }
+
+  .dino:nth-child(1) {
+    display: inline-block;
+  }
+
+  .dino {
+    width: 25%;
+  }
+}

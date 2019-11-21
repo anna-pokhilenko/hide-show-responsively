@@ -33,7 +33,7 @@ img {
   }
 
   .dino {
-    width: 50%
+    width: 50%;
     display: block;
   }
   .dino:nth-child(even) {
